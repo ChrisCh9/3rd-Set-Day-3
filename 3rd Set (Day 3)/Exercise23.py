@@ -1,15 +1,13 @@
 #Ask the user to type in the first line of a nursery rhyme and display the length of the string. Ask for a starting number and an ending number and then display just that section of the text (remember Python starts counting from 0 and not 1). 
 
-rhyme = input("Please enter your first name in lowercase: ")
+rhyme = input("Please enter your rhyme: ")
 
 length = len(rhyme)
 
-surname = input("Please enter your surname in lowercase: ")
+print("Your rhyme has a length of ", length, " letters")
 
-name = name.title()
+start = int(input("Enter a starting number"))
 
-surname = surname.title()
+end = int(input("Enter an ending number"))
 
-full_name = (name + " " + surname)
-
-print(full_name)
+print(rhyme[start:end])
